@@ -1,0 +1,11 @@
+version: '2'
+services:
+    php:
+        container_name: crawler-autoesporte
+        ports:
+            - "8090:80"
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        volumes:
+            - .:/var/www/html
