@@ -26,4 +26,4 @@ foreach ($items as $key => $item)
     $response[] = $itemObject;
 }
 
-echo json_encode($response);
+echo json_encode(['feed' => $response]);

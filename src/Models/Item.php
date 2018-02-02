@@ -48,7 +48,7 @@ class Item implements \JsonSerializable {
      */
     public function setTitle( string $title ): Item
     {
-        $this->title = $title;
+        $this->title = trim($title);
         return $this;
     }
 
