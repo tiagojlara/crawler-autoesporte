@@ -48,8 +48,9 @@ class Auth
      * @param string $hash
      * @return bool
      */
-    public function checkPassWord(string $pass, string $hash)
+    public function checkPassWord(string $pass=null, string $hash=null)
     {
+        if(is_null($pass) || is_null($hash)) return false;
         return password_verify($pass, $hash);
     }
 
