@@ -1,6 +1,10 @@
 <?php
 require 'vendor/autoload.php';
 
+$auth = new TestGlobo\Services\Auth();
+$auth->createUser('admin', 'admin');
+$auth->start();
+
 header('Content-Type: application/json');
 
 $http = new TestGlobo\Services\Http();
