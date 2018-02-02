@@ -14,7 +14,7 @@ $response = [];
 foreach ($items as $key => $item)
 {
     $itemObject = new \TestGlobo\Models\Item();
-    $itemObject->setTitle((string) $item->link);
+    $itemObject->setTitle((string) $item->title);
     $itemObject->setLink((string) $item->link);
 
     $dom = new DOMDocument();
