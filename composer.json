@@ -8,8 +8,7 @@
     ],
     "type": "project",
     "require": {
-        "php": ">=7.0.0",
-        "ext-memcached": "*"
+        "php": ">=7.0.0"
     },
     "autoload": {
         "psr-4": {
